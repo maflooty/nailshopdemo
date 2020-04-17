@@ -1,0 +1,33 @@
+{
+  "name": "vdnail-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "12.16.0",
+    "npm": "6.13.4"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "client-install": "npm install --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon server.js\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Mustapha Mohammed Sheraf",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.9",
+    "morgan": "^1.10.0",
+    "twilio": "^3.42.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
