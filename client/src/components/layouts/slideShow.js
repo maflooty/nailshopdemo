@@ -14,10 +14,10 @@ class SlideShow extends Component {
         >
           <div className='carousel-inner'>
             <div className='carousel-item active'>
-              <img src={slide01} className='d-block w-100' alt='first slide' />
+              <img src={slide02} className='d-block w-100' alt='first slide' />
             </div>
             <div className='carousel-item'>
-              <img src={slide02} className='d-block w-100' alt='second slide' />
+              <img src={slide01} className='d-block w-100' alt='second slide' />
             </div>
             <div className='carousel-item'>
               <img src={slide03} className='d-block w-100' alt='third slide' />
