@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+// Confirmation page
 class Confirm extends Component {
   continue = (e) => {
     e.preventDefault();
 
-    // PROCESS TO SERVER  //
+    // We add payload to SERVER  //
     const payload = {
       name: this.props.values.name,
       phone: this.props.values.phone,
@@ -17,22 +18,19 @@ class Confirm extends Component {
       about: this.props.values.about,
     };
 
-    console.log(payload);
-
+    // Using axios to post data to the server
     axios({
       url: '/appointments',
       method: 'POST',
       data: payload,
     })
-      .then(() => {
-        console.log('Data has been sent to the server');
-      })
-      .catch(() => {
-        console.log('Data is not sent to the server');
-      });
+      .then()
+      .catch();
 
     this.props.nextStep();
   };
+
+  // Function to enable us go back on the form
   back = (e) => {
     e.preventDefault();
     this.props.prevStep();
@@ -44,7 +42,7 @@ class Confirm extends Component {
 
     return (
       <section className='confirm-page  py-5'>
-        <div className='container'>
+        <div className='container main-container'>
           <h2>Confirmation Page</h2>
           <hr />
           <div className='row'>
@@ -129,10 +127,8 @@ class Confirm extends Component {
                   >
                     Confirm
                   </button>
-                </div>
-                <div className='form-group'>
                   <button
-                    className='btn btn-primary btn-lg'
+                    className='btn btn-primary mx-2 btn-lg'
                     type='submit'
                     label='Back'
                     onClick={this.back}

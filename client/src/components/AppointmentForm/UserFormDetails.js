@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 
+// Book Appointment Form
 class UserFormDetails extends Component {
   state = {
     errors: {},
   };
+
+  // Function to continue to confirmation page
   continue = (e) => {
     e.preventDefault();
     this.props.nextStep();
@@ -13,6 +16,7 @@ class UserFormDetails extends Component {
     if (errors) return;
   };
 
+  // Function to validate the form
   validate = () => {
     const errors = {};
     const { values } = this.props;
@@ -29,7 +33,7 @@ class UserFormDetails extends Component {
     const { values, handleChange } = this.props;
     return (
       <section className='appt-form py-5'>
-        <div className='container'>
+        <div className='container main-container'>
           <div>
             <h1>Book Appointment </h1>
           </div>

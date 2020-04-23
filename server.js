@@ -12,10 +12,11 @@ const PORT = process.env.PORT || 8080; // Step 1
 
 // Import Routes
 const appointmentRoute = require('./routes/appointments');
-
+const messageRoute = require('./routes/messages');
 // Middleware
 app.use(bodyParser.json());
 app.use('/appointments', appointmentRoute);
+app.use('/messages', messageRoute);
 
 // Step 2
 mongoose.connect(process.env.DB_CONNECTION, {

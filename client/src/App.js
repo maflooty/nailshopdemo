@@ -10,6 +10,10 @@ import Details from './components/pages/Details';
 import Default from './components/pages/Default';
 import UserForm from './components/AppointmentForm/UserForm';
 import Cart from './components/pages/Cart/Cart';
+import Akader from './components/pages/TeamInfo/Akader';
+import Mustapha from './components/pages/TeamInfo/Mustapha';
+import Dena from './components/pages/TeamInfo/Dena';
+import Masha from './components/pages/TeamInfo/Masha';
 import './App.css';
 
 class App extends Component {
@@ -26,6 +30,10 @@ class App extends Component {
           <Route path='/details' component={Details} />
           <Route path='/cart' component={Cart} />
           <Route path='/appointment' component={UserForm} />
+          <Route path='/akader' component={Akader} />
+          <Route path='/mustapha' component={Mustapha} />
+          <Route path='/dena' component={Dena} />
+          <Route path='/masha' component={Masha} />
           <Route component={Default} />
         </Switch>
       </div>

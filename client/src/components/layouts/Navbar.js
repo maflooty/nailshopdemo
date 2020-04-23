@@ -62,15 +62,17 @@ function Navbar() {
           </ul>
           <div className='spinner-grow text-white' role='status'></div>
           <div>
-            <Link to='/cart' className='ml-auto'>
-              <button className='btn btn-success btn-lg'>Cart</button>
+            <Link to='/appointment'>
+              <button type='button' className='btn mr-2 btn-primary btn-lg'>
+                Book Now
+              </button>
             </Link>
           </div>
-          <Link to='/appointment'>
-            <button type='button' className='btn btn-primary btn-lg'>
-              Book Now
-            </button>
-          </Link>
+          <div>
+            <Link to='/cart' className='ml-auto'>
+              <button className='btn btn-success btn-lg'>My Cart</button>
+            </Link>
+          </div>
         </div>
       </nav>
 

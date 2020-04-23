@@ -13,7 +13,6 @@ class Home extends Component {
         <SlideShow />
         <Services />
         <About />
-
         <Contact />
         <Footer />
       </React.Fragment>

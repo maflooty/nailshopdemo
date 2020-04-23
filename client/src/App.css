@@ -10,30 +10,6 @@ body {
   height: 50%;
 }
 
-.main-btn {
-  color: blue;
-  font-size: 2rem;
-  border: 2px solid skyblue;
-  transition: all 1s ease-out;
-  animation: fromLeft;
-  animation-duration: 7s;
-  animation-delay: 2s;
-}
-
-@keyframes fromLeft {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(30px);
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 .navbar {
   background-color: #ffdc7c;
 }
@@ -60,7 +36,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
+.main-container {
+  margin-right: 2rem;
+}
 .appt-form h1 {
   font-size: 80px;
   font-family: 'Cookie', cursive;
@@ -94,6 +72,18 @@ body {
   border-top: 3px dotted #ffdc7c;
   border-bottom: 3px dotted #ffdc7c;
 }
+.player-wrapper {
+  position: relative;
+  height: 80%;
+  padding-top: 56.25%; /* 56.25%Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .productList-page h2 {
   font-size: 70px;
   font-family: 'Satisfy', cursive;
@@ -103,6 +93,8 @@ body {
 }
 .productList-page {
   background-color: #fff9f5;
+  border-top: 3px dotted #ffdc7c;
+  border-bottom: 3px dotted #ffdc7c;
 }
 .about-page {
   background-image: url('./bg-aboutus.png');
@@ -176,7 +168,7 @@ body {
 
 .Footer-Container h1 {
   margin-top: 12rem;
-  text-align: center;
+
   font-family: 'Cookie', cursive;
   font-size: 80px;
   color: #9b8884;
@@ -190,16 +182,24 @@ body {
 
   font-family: 'Roboto', sans-serif;
 }
+
+@media screen and (max-width: 600px) {
+  .Footer-Container h1 {
+    margin-top: 3rem;
+    padding-left: 2rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .Footer-Container-h2 {
     margin-top: 2rem;
-    margin-left: 3rem;
+    padding-left: 3rem;
   }
 }
 @media screen and (max-width: 600px) {
   .Footer-Container .copyright {
     text-align: left;
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 }
 
@@ -209,4 +209,43 @@ body {
 .copyright {
   text-align: center;
   margin-top: 15rem;
+}
+.skills li {
+  list-style: none;
+  margin: 20px 0;
+}
+.bar {
+  background: #2edd28;
+  display: block;
+  height: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px lightcoral;
+}
+.bar span {
+  height: 3px;
+  float: left;
+  background: black;
+}
+.html {
+  width: 90%;
+}
+.bootstrap {
+  width: 80%;
+}
+.javascript {
+  width: 70%;
+}
+.react {
+  width: 70%;
+}
+.nodejs {
+  width: 50%;
+}
+.express {
+  width: 50%;
+}
+.mongodb {
+  width: 70%;
 }
