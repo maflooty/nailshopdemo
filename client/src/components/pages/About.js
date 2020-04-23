@@ -16,10 +16,7 @@ class About extends Component {
               <div className='col-md-6 my-4 text-dark'>
                 <h1>About Us!</h1>
                 <hr />
-                <h3>
-                  We are <strong>Hack Your Future Belgium </strong>students of
-                  class #6.
-                </h3>
+                <h3>We are Hack Your Future Belgium students of class #6.</h3>
                 <p>
                   We are coding really hard for the past 7 months. We create our
                   masterpiece strugling with tons of stuck moments. But we are
