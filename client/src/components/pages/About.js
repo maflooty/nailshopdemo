@@ -66,9 +66,8 @@ class About extends Component {
                 <h1>Watch Our Video</h1>
                 <hr />
                 <p className='my-5'>
-                  We take the work out of connecting with us so you can
-                  accomplish more. Learn how painless booking appointment can be
-                  using Nailshop.
+                  Learn how painless booking appointment can be within just one
+                  minute!
                 </p>
               </div>
               <div className='col-md-6'>

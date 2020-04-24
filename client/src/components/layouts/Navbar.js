@@ -77,7 +77,7 @@ function Navbar() {
       </nav>
 
       <h3 className='mt-3 ml-3 font-weight-bold fixed subheading'>
-        Good nails reflects your story and your spirit
+        Good nails reflect your story and your spirit
       </h3>
     </React.Fragment>
   );
