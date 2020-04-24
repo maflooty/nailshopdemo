@@ -18,9 +18,9 @@ class About extends Component {
                 <hr />
                 <h3>We are Hack Your Future Belgium students of class #6.</h3>
                 <p>
-                  We are coding really hard for the past 7 months. We create our
-                  masterpiece strugling with tons of stuck moments. But we are
-                  so grateful for all who support us.
+                  We have been coding really hard for the past 7 months. We
+                  created our masterpiece struggling with tons of stuck moments,
+                  and we are so grateful for all who support us.
                 </p>
                 <p>
                   Our thanks and gratitude goes to all supports from Hack Your
